@@ -1,0 +1,405 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ar",
+				"arrayConteudo	index.html"
+			],
+			[
+				"sl",
+				"split('aSome')"
+			],
+			[
+				"conte",
+				"contents	index.html"
+			],
+			[
+				"mat",
+				"matriz"
+			],
+			[
+				"matri",
+				"matrizResultado"
+			],
+			[
+				"matr",
+				"matrizResultado"
+			],
+			[
+				"fi",
+				"finaliza_programa_inicio"
+			],
+			[
+				"fin",
+				"finaliza_programa_fim"
+			],
+			[
+				"mu",
+				"multiplica_matriz_inicio"
+			],
+			[
+				"cri",
+				"cria_matriz_inicio"
+			],
+			[
+				"cria",
+				"cria_matriz_fim"
+			],
+			[
+				"m",
+				"matriz"
+			],
+			[
+				"ma",
+				"matriz"
+			],
+			[
+				"in",
+				"inicializaMatriz"
+			],
+			[
+				"inc",
+				"inicializaMatriz"
+			],
+			[
+				"co",
+				"colunas"
+			],
+			[
+				"matriz",
+				"matrizResultado"
+			],
+			[
+				"linhas",
+				"linhas"
+			],
+			[
+				"cle",
+				"clearfix"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"letter",
+				"letterSubject"
+			],
+			[
+				"padd",
+				"padding-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"last_filter": "FORTR",
+		"selected_items":
+		[
+			[
+				"FORTR",
+				"Set Syntax: MinimalFortran"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"Set C",
+				"Set Syntax: C"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML (Tcl)"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projetos/cotidiano-design-website"
+	],
+	"file_history":
+	[
+		"/C/Users/dougl/Downloads/jogos.txt",
+		"/C/Users/dougl/Desktop/marcelo.bat",
+		"/C/Users/dougl/Desktop/post.txt",
+		"/C/Users/dougl/Desktop/data.json",
+		"/C/Users/dougl/Documents/Comp Conc/lab1.c",
+		"/C/Users/dougl/Desktop/cotidianodesign/default.html",
+		"/C/Users/dougl/Desktop/cotidianodesign/main.css",
+		"/C/Users/dougl/Desktop/cotidianodesign/normalize.css",
+		"/C/Users/dougl/AppData/Local/Temp/7zOCA5A82C2/lab4.c",
+		"/D/Comp Conc/lab3/lab3.c",
+		"/C/Users/dougl/Documents/Comp Conc/DouglasFerreira/lab3.c",
+		"/C/Users/dougl/Documents/Comp Conc/DouglasFerreira/lab2.c",
+		"/C/Users/dougl/Documents/Parser Edital/index.html",
+		"/C/Users/dougl/Documents/Parser Edital/dados/dpu.txt",
+		"/C/Users/dougl/Documents/Parser Edital/parser-edital.sublime-project",
+		"/C/Users/dougl/Desktop/caelumprovas/pom.xml",
+		"/C/Users/dougl/Desktop/caelumprovas/src/main/java/br/com/caelum/geradordeprovas/configuration/JpaConfigurator.java",
+		"/C/Users/dougl/Desktop/jbossews.log",
+		"/C/Users/dougl/workspace/geradordeprovas/src/main/java/br/com/caelum/geradordeprovas/controllers/LoginController.java",
+		"/C/Users/dougl/Desktop/caelumprovas/src/main/java/br/com/caelum/geradordeprovas/controllers/LoginController.java",
+		"/C/Users/dougl/Desktop/caelumprovas/src/main/webapp/snoop.jsp",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/lab2.txt",
+		"/C/Users/dougl/AppData/Local/Temp/Temp1_cods-lab1.zip/cods-lab1/hello.c",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/lab2.c",
+		"/C/Users/dougl/AppData/Local/Temp/7zO0D256D1F/temp4.c",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/outputO0#.txt",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/outputO2.txt",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/output.txt",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/timer.h",
+		"/C/Users/dougl/Documents/Slides  BD/Completo/Aula04E02.txt",
+		"/C/Users/dougl/Documents/Slides  BD/Completo/Aula04E02Gabarito.txt",
+		"/C/Users/dougl/Documents/Slides  BD/Completo/Aula04E02~",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/DouglasFerreira/lab2.c",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/DouglasFerreira/lab2.txt",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/incrementa_vetor.c",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/igor.c",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/A3x3.txt",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/dados/A256x256.txt",
+		"/C/Users/dougl/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/dougl/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/dougl/Documents/Comp Conc/cods-lab2/A256x256.txt",
+		"/C/xampp/htdocs/gerencia/index.php",
+		"/C/xampp/htdocs/gerencia/core/Invoker.class.php",
+		"/C/xampp/htdocs/gerencia/control/LoginController.class.php",
+		"/C/Users/dougl/Documents/Net Cancelamento 3",
+		"/C/Users/dougl/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/dougl/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/ProgramData/Oracle/Java/javapath/javaw.exe",
+		"/C/xampp/htdocs/cartaosleitores/public/scripts/animationAbout.js",
+		"/C/xampp/htdocs/cartaosleitores/public/scripts/animationsHome.js",
+		"/C/xampp/htdocs/cartaosleitores/bootstrap/app.php",
+		"/C/xampp/htdocs/cartaosleitores/public/scripts/awardedLetters.js",
+		"/C/xampp/htdocs/cartaosleitores/resources/views/app.blade.php",
+		"/C/xampp/htdocs/cartaosleitores/app/Http/Controllers/LetterController.php",
+		"/C/xampp/htdocs/cartaosleitores/resources/views/sendLetter.blade.php",
+		"/C/xampp/htdocs/cartaosleitores/resources/views/awardedLetter.blade.php",
+		"/C/xampp/htdocs/cartaosleitores/public/css/main.css",
+		"/C/xampp/htdocs/cartaosleitores/resources/views/home.blade.php",
+		"/C/xampp/htdocs/cartaosleitores/public/scripts/modal.js",
+		"/C/xampp/htdocs/cartaosleitores/public/scripts/home2.js",
+		"/C/xampp/htdocs/cartaosleitores/resources/views/emails/letter.blade.php",
+		"/C/xampp/htdocs/cartaosleitores/database/migrations/2015_08_08_132812_adiciona_coluna_assuntos.php",
+		"/C/xampp/htdocs/cartaosleitores/resources/views/contact.blade.php",
+		"/C/xampp/htdocs/cartaosleitores/.env",
+		"/C/xampp/htdocs/cartaosleitores/app/Http/Controllers/HomeController.php",
+		"/E/xampp/htdocs/cartaosleitores/.env",
+		"/C/Users/dougl/Desktop/autoexec.cfg",
+		"/C/Users/dougl/.ssh/id_rsa.pub"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"calcula_vencedor",
+			"[[:upper]]",
+			"\\b[A-Z]+",
+			"\\b[A-Z]+b\\",
+			"/[A-Z]+:/",
+			"[A-Z]{2,}",
+			"\\b[A-Z]{2,}\\b",
+			"\\[A-Z](?=[^{}]*})",
+			"[A-Z](?=[^{}]*})",
+			"\\{[A-Z]\\}",
+			"\\\\{[A-Z]\\}",
+			"^[A-Z]$",
+			"[A-Z]\n",
+			"\\b[A-Z]\\b\n",
+			"^[A-Z]$",
+			"^[A-Z]{}$",
+			"^[A-Z]{2}$",
+			"copiar",
+			"com 4 threads",
+			" vetor com 3 threads:",
+			"com 3 threads",
+			"com 2 threads",
+			"1 threads",
+			"comment",
+			"newInstance",
+			"letter-date",
+			"modal-botao-fechar",
+			"home-letter-subject",
+			"/option",
+			"value=",
+			"send",
+			"<option>BRASIL</option>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cotidiano-design.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"contgroll",
+				"control\\LoginController.class.php"
+			],
+			[
+				"app",
+				"bootstrap\\app.php"
+			],
+			[
+				"awarder",
+				"public\\scripts\\awardedLetters.js"
+			],
+			[
+				"mian",
+				"public\\css\\main.css"
+			],
+			[
+				"main",
+				"public\\css\\main.css"
+			],
+			[
+				"main.cs",
+				"public\\css\\main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,24 @@
+@media (min-width: 400px){
+	.header{
+		height: 140px;
+	}
+	.logo{
+		width: 350px;
+	}
+
+	.menu-button{
+		margin: 20px 0px 0px 20px;	
+	}
+
+}
+
+
+.header{
+	background-color: #F8F5F5;
+}
+
+
+.logo{
+	float: right;
+}
+

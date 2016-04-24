@@ -1,0 +1,21 @@
+.footer-pattern{
+    background-image: url("../images/footer-hay-pattern.png");
+    background-repeat: repeat-x;
+    height: 50px;
+}
+
+
+.contact{
+	font-style: normal;
+	font-family: 'Didact Gothic', sans-serif;
+	margin: 0px 0px 10px 15px;
+}
+
+.contact-phones{
+	margin-bottom: 8px;
+}
+
+.address-title{
+	text-transform: uppercase;
+
+}

@@ -1,0 +1,12 @@
+.portfolio-project-placeholder{
+	width: 350px;
+	display: block;
+	margin: 20px auto 0px;
+}	
+
+.portfolio-title{
+	color: #BCD0C2;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Didact Gothic', sans-serif;
+}	
