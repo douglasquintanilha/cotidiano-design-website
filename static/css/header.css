@@ -1,16 +1,109 @@
-@media (min-width: 400px){
+@media (max-width: 450px){
 	.header{
-		height: 140px;
+		height: 6.5em;
+		z-index: 3;
+		position: fixed;
+		top: 0;
+		width: 100%;
 	}
 	.logo{
-		width: 350px;
+		width: 20em;
 	}
 
 	.menu-button{
 		margin: 20px 0px 0px 20px;	
+		width: 0.48em;
+	}
+
+	.menu-active .mobile-menu{
+		left: 0px;
+	}
+
+	.menu-active:after{
+		content: "";
+		display: block;
+
+		z-index: 1;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+
+		background: rgba(0,0,0, 0.3);
+	}
+
+
+	.menu-side-pattern{
+	    background-image: url("../images/side-wave-pattern.png");
+	    background-repeat: repeat-y;
+		float: left;
+
+ 	    width: 3.2em;
+	    height: 100%;
+	}
+
+	.mobile-menu-navigation{
+		padding-top: 6.5em; /*same as header-height*/
+		float: left;
+	}
+
+	.mobile-menu-navigation > ul{
+		list-style: none;
+	}
+	
+
+	.mobile-menu-navigation > ul > li{
+		list-style: none;
+		padding-top: 30px;
+	}
+
+	.mobile-menu-item{
+		font-style: normal;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 1.8em;
+
+		text-transform: uppercase;
+		color: #BCD0C2;
+	}
+	.mobile-menu-contact{
+		float: left;
+		margin-left: 70px;
+		width: 270px;
+		position: fixed;
+
+		bottom: 0px
+	}
+
+	.social-icon{
+		display: inline-block;
+		width: 3.5em;
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+	.social-networks{
+		width: 320px;
+		margin: 0 auto;
+	}
+
+	.mobile-menu-email{
+		font-style: normal;
+		font-weight: bold;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 1.1em;
+		color: #BCD0C2;
+
 	}
 
 }
+
+@media not all and (max-width: 450px){
+	.menu-open, 
+	.menu-close {
+		display: none;
+	}
+}
+
 
 
 .header{
@@ -22,3 +115,19 @@
 	float: right;
 }
 
+
+.mobile-menu{
+	background: #FBFBFB;
+
+	height: 100%;
+	width: 90%; /*same as left*/
+	max-width: 405px;
+	
+	position: fixed;
+	z-index: 2;
+	top: 0px;
+	left: -90%; /*same as width*/
+
+
+	transition: left 0.3s ease-out;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
@@ -16,15 +16,35 @@
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Didact+Gothic' >
 
 </head>
-<body>
+<body>	
 	<header class="header">
-		<img src="static/images/3-dot-menu.png" alt="Botão do menu" class="menu-button">
+		<img src="static/images/3-dot-menu.png" alt="Botão do menu" class="menu-button menu-open">
 		<img src="static/images/logo.png" alt="Logotipo da empresa" class="logo">
 		<div class="clearfix"></div>
 	</header>
 
-	<section>
-		<h1 class="portfolio-title">Portifólio</h1>
+	<nav class="mobile-menu">
+		<div class="menu-side-pattern"></div>
+		<div class="mobile-menu-navigation">
+			<ul>
+				<li><a href="#" class="mobile-menu-item">Início</a></li>
+				<li><a href="#" class="mobile-menu-item">Portfólio</a></li>
+				<li><a href="#" class="mobile-menu-item">Contato</a></li>			
+			</ul>
+		</div>
+		<address class="mobile-menu-contact">
+			<div class="social-networks">
+				<a href="#"><img src="static/images/facebook-icon.png" alt="Icone do Facebook" class="social-icon"></a>
+				<a href="#"><img src="static/images/wordpress-icon.png" alt="Icone do Wordpress" class="social-icon"></a>
+				<a href="#"><img src="static/images/twitter-icon.png" alt="Icone do Twitter" class="social-icon"></a>
+			</div>
+			<span class="mobile-menu-email">contato@cotidianodesign.com.br</span>
+		</address>
+		<div class="clearfix"></div>
+	</nav>
+
+	<section class="portfolio">
+		<h1 class="portfolio-title">Portfólio</h1>
 	
 		<img src="static/images/project-placeholder.png" alt="Imagem placeholder" class="portfolio-project-placeholder">
 		<img src="static/images/project-placeholder.png" alt="Imagem placeholder" class="portfolio-project-placeholder">
@@ -44,5 +64,6 @@
 		<div class="footer-pattern"></div>
 	</footer>
 
+	<script type="text/javascript" src="static/js/menu-mobile.js"></script>
 </body>
 </html>

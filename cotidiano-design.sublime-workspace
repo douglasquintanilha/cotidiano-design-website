@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"mari",
+				"margin"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"MAR",
+				"margin"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bakc",
+				"background-color"
+			],
+			[
 				"ar",
 				"arrayConteudo	index.html"
 			],
@@ -95,6 +127,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1646,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/css/footer.css",
+			"settings":
+			{
+				"buffer_size": 327,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -153,10 +201,18 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Projetos/cotidiano-design-website"
+		"/C/Projetos/cotidiano-design-website",
+		"/C/Projetos/cotidiano-design-website/static",
+		"/C/Projetos/cotidiano-design-website/static/css",
+		"/C/Projetos/cotidiano-design-website/static/fonts",
+		"/C/Projetos/cotidiano-design-website/static/images"
 	],
 	"file_history":
 	[
+		"/C/Projetos/cotidiano-design-website/static/css/main.css",
+		"/C/Projetos/cotidiano-design-website/static/css/header.css",
+		"/C/Projetos/cotidiano-design-website/static/css/portfolio.css",
+		"/C/Projetos/cotidiano-design-website/static/css/normalize.css",
 		"/C/Users/dougl/Downloads/jogos.txt",
 		"/C/Users/dougl/Desktop/marcelo.bat",
 		"/C/Users/dougl/Desktop/post.txt",
@@ -228,7 +284,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 54.0
 	},
 	"find_in_files":
 	{
@@ -242,6 +298,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"		<img src=\"static/images/project-placeholder.png\" alt=\"Imagem placeholder\" class=\"portfolio-project-placeholder\">\n",
+			"project",
+			"clear",
+			"border",
 			"calcula_vencedor",
 			"[[:upper]]",
 			"\\b[A-Z]+",
@@ -291,8 +351,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1079,
+								1194
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "static/css/footer.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -397,7 +516,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 186.0,
+	"side_bar_width": 237.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -10,3 +10,7 @@
 	text-transform: uppercase;
 	font-family: 'Didact Gothic', sans-serif;
 }	
+
+.portfolio{
+	padding-top: 6.5em; /*same as header-height*/
+}
