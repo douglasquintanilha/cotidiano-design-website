@@ -1,3 +1,8 @@
+@font-face{
+	font-family: "3x3dots";
+	src: url("../fonts/3x3dots.ttf") format("truetype");
+}
+
 @media (max-width: 450px){
 	.header{
 		height: 6.5em;
@@ -12,7 +17,9 @@
 
 	.menu-button{
 		margin: 20px 0px 0px 20px;	
-		width: 0.48em;
+		font-size: 5em;
+		color: #F0AF1B 	;
+		font-family: "3x3dots";
 	}
 
 	.menu-active .mobile-menu{
@@ -60,7 +67,7 @@
 
 	.mobile-menu-item{
 		font-style: normal;
-		font-family: 'Didact Gothic', sans-serif;
+		font-family: 'futura-bk', sans-serif;
 		font-size: 1.8em;
 
 		text-transform: uppercase;
@@ -71,7 +78,7 @@
 		margin-left: 70px;
 		width: 270px;
 		position: fixed;
-
+		padding-bottom: 20px;
 		bottom: 0px
 	}
 
@@ -89,7 +96,7 @@
 	.mobile-menu-email{
 		font-style: normal;
 		font-weight: bold;
-		font-family: 'Didact Gothic', sans-serif;
+		font-family: 'futura-bk', sans-serif;
 		font-size: 1.1em;
 		color: #BCD0C2;
 

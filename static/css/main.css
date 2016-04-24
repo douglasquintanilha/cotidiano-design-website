@@ -10,3 +10,18 @@ a:hover
     text-decoration:none;
     cursor:pointer;
 }
+
+body{
+	background: url("../images/background-picture.png") center center no-repeat; 
+	background-size: cover;
+}
+
+@font-face{
+	font-family: "3x3dots";
+	src: url("../fonts/3x3dots.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "futura-bk";
+	src: url("../fonts/futura-bk.otf") format("opentype");
+}
