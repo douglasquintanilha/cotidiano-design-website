@@ -1,17 +1,33 @@
-.portfolio-project-placeholder{
-	width: 350px;
-	display: block;
-	margin: 20px auto 0px;
-}	
+@media ( min-width: 320px){
+	.portfolio-project-placeholder{
+		width: 350px;
+		display: block;
+		margin: 20px auto 0px;
+	}	
 
-.portfolio-title{
-	color: #FFFFFF;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Didact Gothic', sans-serif;
-}	
+	.portfolio-title{
+		color: #FFFFFF;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'futura-bk', sans-serif;
+	}	
 
-.portfolio{
-	padding-top: 6.5em; /*same as header-height*/
+	.portfolio{
+		padding-top: 6.5em; /*same as header-height*/
+	}
 }
 
+/* Desktop */
+
+.portfolio-title{
+		color: #FFFFFF;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 3.8em;
+		font-family: 'futura-bk', sans-serif;
+		
+		position: relative;
+		top: -100px;
+		padding-left: 50px;
+
+}	

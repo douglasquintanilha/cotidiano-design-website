@@ -1,23 +1,30 @@
+@media(min-width: 320px){
+	.footer-pattern{
+	    background-image: url("../images/footer-hay-pattern.png");
+	    background-repeat: repeat-x;
+	    height: 50px;
+	}
+
+
+	.contact{
+		font-style: normal;
+		font-family: 'futura-bk', sans-serif;
+		margin: 0px 0px 10px 15px;
+		font-size: 1.2em;
+		color: #FFFFFF;
+	}
+
+	.contact-phones{
+		margin-bottom: 8px;
+	}
+
+	.address-title{
+		text-transform: uppercase;
+	}
+}
+
+/*Desktop */
+
 .footer-pattern{
-    background-image: url("../images/footer-hay-pattern.png");
-    background-repeat: repeat-x;
-    height: 50px;
-}
-
-
-.contact{
-	font-style: normal;
-	font-family: 'futura-bk', sans-serif;
-	margin: 0px 0px 10px 15px;
-	font-size: 1.2em;
-	color: #FFFFFF;
-}
-
-.contact-phones{
-	margin-bottom: 8px;
-}
-
-.address-title{
-	text-transform: uppercase;
-
+	display: none;
 }

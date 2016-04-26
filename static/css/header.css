@@ -3,13 +3,14 @@
 	src: url("../fonts/3x3dots.ttf") format("truetype");
 }
 
-@media (max-width: 450px){
+@media (min-width: 320px){
 	.header{
 		height: 6.5em;
 		z-index: 3;
 		position: fixed;
 		top: 0;
 		width: 100%;
+		background-color: #F8F5F5;
 	}
 	.logo{
 		width: 20em;
@@ -104,7 +105,7 @@
 
 }
 
-@media not all and (max-width: 450px){
+@media not all and (max-width: 480px){
 	.menu-open, 
 	.menu-close {
 		display: none;
@@ -112,14 +113,18 @@
 }
 
 
-
+/* Desktop */
 .header{
-	background-color: #F8F5F5;
+	background-color: transparent;
+	width: 60%;
+	float: right;
+	position: static;
 }
 
 
 .logo{
 	float: right;
+	width: 18em;
 }
 
 
