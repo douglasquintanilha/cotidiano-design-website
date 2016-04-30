@@ -2,14 +2,15 @@
 	.footer-pattern{
 	    background-image: url("../images/footer-hay-pattern.png");
 	    background-repeat: repeat-x;
-	    height: 50px;
+	    height: 45px;
 	}
 
 
 	.contact{
 		font-style: normal;
 		font-family: 'futura-bk', sans-serif;
-		margin: 0px 0px 10px 15px;
+		letter-spacing: 2px;
+		margin: 60px 0px 30px 15px;
 		font-size: 1.2em;
 		color: #FFFFFF;
 	}
@@ -24,7 +25,36 @@
 }
 
 /*Desktop */
+@media (min-width: 1024px){
 
-.footer-pattern{
-	display: none;
-}
+	.footer-pattern{
+		display: none;
+	}
+
+	.contact{
+		font-size: 0.9em;
+	}
+
+	.footer{
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+	}
+}	
+
+/*Desktop */
+@media (min-width: 1600px){
+
+	.footer-pattern{
+		display: none;
+	}
+
+	.contact{
+	}
+
+	.footer{
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+	}
+}	

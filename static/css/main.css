@@ -11,11 +11,6 @@ a:hover
     cursor:pointer;
 }
 
-body{
-	background: url("../images/background-picture.png") center center no-repeat; 
-	background-size: cover;
-}
-
 @font-face{
 	font-family: "3x3dots";
 	src: url("../fonts/3x3dots.ttf") format("truetype");
@@ -24,4 +19,59 @@ body{
 @font-face{
 	font-family: "futura-bk";
 	src: url("../fonts/futura-bk.otf") format("opentype");
+}
+
+@media(min-width: 320px){
+	html{
+		background: url("../images/background-picture-mobile.png") center center no-repeat; 
+		background-size: cover;
+	}
+
+	.upper-corner-pattern{
+		display: none;
+	}
+
+	.lower-corner-pattern{
+		display: none;
+	}
+
+}
+
+@media(min-width: 1024px){
+	html{
+		background: url("../images/background-picture.png") center center no-repeat; 
+		background-size: cover;
+	}
+	.upper-corner-pattern{
+		display: initial;
+		position: absolute;
+		width: 40em;
+	}
+
+	.lower-corner-pattern{
+		display: initial;
+		position: absolute;
+		width: 30em;
+		bottom: 0px;
+		right: 0px;
+	}
+}
+
+
+
+@media(min-width: 1600px){
+	html{
+		background: url("../images/background-picture.png") center center no-repeat; 
+	}
+	.upper-corner-pattern{
+		display: initial;
+		position: absolute;
+	}
+
+	.lower-corner-pattern{
+		display: initial;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}
 }

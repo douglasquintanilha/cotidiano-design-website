@@ -3,7 +3,7 @@
 	src: url("../fonts/3x3dots.ttf") format("truetype");
 }
 
-@media (min-width: 320px){
+@media(min-width: 320px){
 	.header{
 		height: 6.5em;
 		z-index: 3;
@@ -13,14 +13,17 @@
 		background-color: #F8F5F5;
 	}
 	.logo{
-		width: 20em;
+		width: 16em;
+		float: right;
 	}
 
 	.menu-button{
-		margin: 20px 0px 0px 20px;	
-		font-size: 5em;
+		margin: 4px 0px 0px 20px;	
+		display: inline-block;
+		font-size: 3.3em;
 		color: #F0AF1B 	;
 		font-family: "3x3dots";
+		vertical-align: top;
 	}
 
 	.menu-active .mobile-menu{
@@ -69,7 +72,7 @@
 	.mobile-menu-item{
 		font-style: normal;
 		font-family: 'futura-bk', sans-serif;
-		font-size: 1.8em;
+		font-size: 1.6em;
 
 		text-transform: uppercase;
 		color: #BCD0C2;
@@ -85,12 +88,12 @@
 
 	.social-icon{
 		display: inline-block;
-		width: 3.5em;
-		margin-left: 20px;
+		width: 3.0em;
+		margin-left: 0.38em;
 		margin-bottom: 10px;
 	}
 	.social-networks{
-		width: 320px;
+		width: 15em;
 		margin: 0 auto;
 	}
 
@@ -98,10 +101,42 @@
 		font-style: normal;
 		font-weight: bold;
 		font-family: 'futura-bk', sans-serif;
-		font-size: 1.1em;
+		font-size: 0.9em;
 		color: #BCD0C2;
 
 	}
+}
+
+
+@media (min-width: 360px){
+	.logo{
+		width: 18em;
+	}
+
+	.social-icon{
+		width: 3.5em;
+		margin-left: 0.39em;
+		margin-bottom: 10px;
+	}
+	.social-networks{
+		width: 15em;
+		margin: 0 auto;
+	}
+
+	.mobile-menu-email{
+		font-size: 1.1em;
+
+	}
+
+	.mobile-menu-item{
+		font-size: 1.8em;
+	}
+
+	.menu-button{
+		font-size: 3.8em;
+	}
+
+
 
 }
 
@@ -114,17 +149,45 @@
 
 
 /* Desktop */
-.header{
-	background-color: transparent;
-	width: 60%;
-	float: right;
-	position: static;
+
+@media (min-width: 1024px){
+	.header{
+		background-color: transparent;
+		width: 60%;
+		float: right;
+		position: static;
+	}
+
+
+	.logo{
+		float: right;
+		width: 14em;
+		margin-top: 1.5em;
+		margin-right: 1em;
+	}
+
+
 }
 
+/* Desktop */
 
-.logo{
-	float: right;
-	width: 18em;
+@media (min-width: 1600px){
+	.header{
+		background-color: transparent;
+		width: 60%;
+		float: right;
+		position: static;
+	}
+
+
+	.logo{
+		float: right;
+		width: 18em;
+		margin-top: 1.5em;
+		margin-right: 1em;
+	}
+
+
 }
 
 
