@@ -61,16 +61,19 @@ a:hover
 
 @media(min-width: 1600px){
 	html{
-		background: url("../images/background-picture.png") center center no-repeat; 
+		background: url("../images/background-picture4.jpg") center center no-repeat; 
+		background-size: cover;
 	}
 	.upper-corner-pattern{
 		display: initial;
 		position: absolute;
+		width: auto;
 	}
 
 	.lower-corner-pattern{
 		display: initial;
 		position: absolute;
+		width: auto;
 		bottom: 0px;
 		right: 0px;
 	}

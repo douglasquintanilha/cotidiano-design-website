@@ -1,0 +1,25 @@
+{
+  "name": "cotidiano-design-website",
+  "version": "1.0.0",
+  "description": "The website for the Interior Design Company called Cotidiano Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasquintanilha/cotidiano-design-website.git"
+  },
+  "author": "Douglas Quintanilha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douglasquintanilha/cotidiano-design-website/issues"
+  },
+  "homepage": "https://github.com/douglasquintanilha/cotidiano-design-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0"
+  }
+}
