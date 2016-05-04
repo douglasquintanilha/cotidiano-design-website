@@ -3,9 +3,9 @@ var gulp = require("gulp"),
 	browserSync = require('browser-sync');
 
 gulp.task("build-img",function(){
-	gulp.src("static/images/**/*")
+	gulp.src("src/static/images/**/*")
 		.pipe(imagemin())
-		.pipe(gulp.dest("static/images/"));
+		.pipe(gulp.dest("src/static/images/"));
 
 });
 
@@ -13,8 +13,8 @@ gulp.task("build-img",function(){
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: './'
+            baseDir: './src'
         }
     });
-    gulp.watch('./**/*').on('change', browserSync.reload);
+    gulp.watch('src/**/*').on('change', browserSync.reload);
 });	

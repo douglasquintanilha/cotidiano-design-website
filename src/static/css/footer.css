@@ -1,0 +1,60 @@
+@media(min-width: 320px){
+	.footer-pattern{
+	    background-image: url("../images/footer-hay-pattern.png");
+	    background-repeat: repeat-x;
+	    height: 45px;
+	}
+
+
+	.contact{
+		font-style: normal;
+		font-family: 'futura-bk', sans-serif;
+		letter-spacing: 2px;
+		margin: 60px 0px 30px 15px;
+		font-size: 1.2em;
+		color: #FFFFFF;
+	}
+
+	.contact-phones{
+		margin-bottom: 8px;
+	}
+
+	.address-title{
+		text-transform: uppercase;
+	}
+}
+
+/*Desktop */
+@media (min-width: 1024px){
+
+	.footer-pattern{
+		display: none;
+	}
+
+	.contact{
+		font-size: 0.9em;
+	}
+
+	.footer{
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+	}
+}	
+
+/*Desktop */
+@media (min-width: 1600px){
+
+	.footer-pattern{
+		display: none;
+	}
+
+	.contact{
+	}
+
+	.footer{
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+	}
+}	

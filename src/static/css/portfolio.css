@@ -1,0 +1,156 @@
+@media ( min-width: 320px){
+	.portfolio-project-placeholder{
+		width: 350px;
+		display: block;
+		margin: 20px auto 0px;
+	}	
+
+	.portfolio-project-1{
+		width: 18em;
+		display: block;
+		margin: 10px auto 0px;
+		border: 3px solid white;
+	}
+	.portfolio-project-2{
+		width: 18em;
+		display: block;
+		margin: 10px auto 0px;
+		border: 3px solid white;
+	}
+	.portfolio-project-3{
+		width: 18em;
+		display: block;
+		margin: 10px auto 0px;
+		border: 3px solid white;
+	}
+
+	.portfolio-title{
+		color: #FFFFFF;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'futura-bk', sans-serif;
+	}	
+
+	.portfolio{
+		padding-top: 6.5em; /*same as header-height*/
+		width: 100%;
+	}
+}
+
+@media ( min-width: 360px){
+	.portfolio-project-placeholder{
+		width: 350px;
+		display: block;
+		margin: 20px auto 0px;
+	}	
+
+	.portfolio-project-1{
+		width: 20em;
+		display: block;
+		margin: 10px auto 0px;
+		border: 3px solid white;
+	}
+	.portfolio-project-2{
+		width: 20em;
+		display: block;
+		margin: 10px auto 0px;
+		border: 3px solid white;
+	}
+	.portfolio-project-3{
+		width: 20em;
+		display: block;
+		margin: 10px auto 0px;
+		border: 3px solid white;
+	}
+}
+
+
+
+@media (min-width: 1024px){
+	.portfolio-title{
+			color: #FFFFFF;
+			text-align: left;
+			text-transform: uppercase;
+			font-size: 3em;
+			font-family: 'futura-bk', sans-serif;
+			
+			position: absolute;
+			top: 0px;
+			padding-left: 50px;
+			margin-bottom: 0px;
+			letter-spacing: 7px;
+	}	
+
+	.portfolio-images{
+		margin: 0 auto;
+		width: 100%;
+		top: 0px;
+		position: relative;
+		text-align: center;
+	}
+
+	.portfolio-project-1{
+		width: 24.5em;
+		display: inline-block;
+		border: 3px solid white;
+	}
+	.portfolio-project-2{
+		width: 18.75em;
+		display: inline-block;
+		margin-left: 10px;
+		border: 3px solid white;
+	}
+	.portfolio-project-3{
+		width: 24.5em;
+		display: block;
+		margin: 10px auto 0px;
+		border: 3px solid white;
+	}
+
+}  
+
+
+/* Desktop */
+
+@media (min-width: 1600px){
+	.portfolio-title{
+			color: #FFFFFF;
+			text-align: left;
+			text-transform: uppercase;
+			font-size: 4.3em;
+			font-family: 'futura-bk', sans-serif;
+			
+			position: relative;
+			top: -110px;
+			padding-left: 50px;
+			margin-bottom: 0px;
+			letter-spacing: 7px;
+	}	
+
+	.portfolio-images{
+		margin: 0 auto;
+		width: 100%;
+		top: -110px;
+		position: relative;
+		text-align: center;
+	}
+
+	.portfolio-project-1{
+		width: 36.0em;
+		display: inline-block;
+		border: 3px solid white;
+	}
+	.portfolio-project-2{
+		width: 28.25em;
+		display: inline-block;
+		margin-left: 10px;
+		border: 3px solid white;
+	}
+	.portfolio-project-3{
+		width: 36.0em;
+		display: block;
+		margin: 10px auto 0px;
+		border: 3px solid white;
+	}
+
+}
