@@ -41,6 +41,8 @@ a:hover
 	html{
 		background: url("../images/background-picture.png") center center no-repeat; 
 		background-size: cover;
+		width: 100%;
+		height: 100%;
 	}
 	.upper-corner-pattern{
 		display: initial;
@@ -65,8 +67,6 @@ a:hover
 		background-size: cover;
 	}
 	.upper-corner-pattern{
-		display: initial;
-		position: absolute;
 		width: auto;
 	}
 
@@ -74,7 +74,5 @@ a:hover
 		display: initial;
 		position: absolute;
 		width: auto;
-		bottom: 0px;
-		right: 0px;
 	}
 }

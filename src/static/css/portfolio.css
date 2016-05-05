@@ -120,18 +120,17 @@
 			font-size: 4.3em;
 			font-family: 'futura-bk', sans-serif;
 			
-			position: relative;
-			top: -110px;
+			position: absolute;
+			top: 0px;
 			padding-left: 50px;
 			margin-bottom: 0px;
 			letter-spacing: 7px;
 	}	
 
 	.portfolio-images{
+		padding-top: 50px;
 		margin: 0 auto;
 		width: 100%;
-		top: -110px;
-		position: relative;
 		text-align: center;
 	}
 
