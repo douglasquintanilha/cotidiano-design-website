@@ -1,9 +1,49 @@
-@font-face{
-	font-family: "3x3dots";
-	src: url("../fonts/3x3dots.ttf") format("truetype");
+.menu{
+	list-style: none;
+	border: 1px solid lightgreen;
+	width: 30em;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
 }
 
+.menu > ul{
+	padding: 0px;
+}
+
+.menu-item{
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	list-style: none;
+	font-family: 'futura-bk', sans-serif;
+	margin: 0 20px;
+
+}
+
+.mobile-menu{
+	background: #FBFBFB;
+
+	height: 100%;
+	width: 90%; /*same as left*/
+	max-width: 405px;
+	
+	position: fixed;
+	z-index: 2;
+	top: 0px;
+	left: -90%; /*same as width*/
+
+
+	transition: left 0.3s ease-out;
+}
+
+
+
 @media(min-width: 320px){
+	.menu{
+		display: none;
+	}
 	.header{
 		height: 6.5em;
 		z-index: 3;
@@ -18,12 +58,9 @@
 	}
 
 	.menu-button{
-		margin: 4px 0px 0px 20px;	
+		margin: 20px 0px 0px 20px;	
 		display: inline-block;
-		font-size: 3.3em;
-		color: #F0AF1B 	;
-		font-family: "3x3dots";
-		vertical-align: top;
+		height: 0.6em;
 	}
 
 	.menu-active .mobile-menu{
@@ -147,23 +184,39 @@
 	}
 }
 
-
 /* Desktop */
 
 @media (min-width: 1024px){
+		
+
+
 	.header{
-		background-color: transparent;
-		width: 60%;
-		float: right;
-		position: static;
+		background: transparent;
+		width: 99.80%; /* Wesley*/
+		position: relative;
+		border: 1px solid black;
+		height: 100%;
+		}
+	
+	.top-pattern{
+	    background-image: url("../images/top-wave-pattern.png");
+	    background-repeat: repeat-x;
+	    border: 1px solid red;
+		width: 100%;
+		height: 3em;
 	}
 
-
 	.logo{
-		float: right;
-		width: 14em;
-		margin-top: 1.5em;
+		width: 18em;
+		margin-top: 0.1em;
 		margin-right: 1em;
+		position: absolute;
+		right: 0px;
+		float: none;
+	}
+
+	.menu{
+		display: block;
 	}
 
 
@@ -172,37 +225,10 @@
 /* Desktop */
 
 @media (min-width: 1600px){
-	.header{
-		background-color: transparent;
-		width: 60%;
-		float: right;
-		position: static;
-	}
-
 
 	.logo{
-		float: right;
-		width: 18em;
-		margin-top: 1.5em;
-		margin-right: 1em;
+		width: 26em;
 	}
 
 
-}
-
-
-.mobile-menu{
-	background: #FBFBFB;
-
-	height: 100%;
-	width: 90%; /*same as left*/
-	max-width: 405px;
-	
-	position: fixed;
-	z-index: 2;
-	top: 0px;
-	left: -90%; /*same as width*/
-
-
-	transition: left 0.3s ease-out;
 }
