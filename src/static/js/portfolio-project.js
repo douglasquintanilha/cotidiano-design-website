@@ -1,10 +1,10 @@
 var projectId = 0;
 var projectPhoto = 0;
 
-var project1Size = 4;
-var project2Size = 6;
-var project3Size = 3;
-var project4Size = 4;
+var project0Size = 9;
+var project1Size = 1;
+var project2Size = 3;
+var project3Size = 1;
 
 $(".portfolio-project").on("click",function(){
 	projectId = $(this).data("id");
@@ -22,6 +22,7 @@ $(".portfolio-project").on("click",function(){
 
 
 $(".arrow-back").on("click",function(){
+	projectPhoto = 0;
 	escondeProjetos();
 	mostraPortfolio()
 });
@@ -30,21 +31,21 @@ $(".arrow-back").on("click",function(){
 $(".arrow-left").on("click",function(){
 	switch(projectId){
 		case 0: 
-			projectPhoto = projectPhoto - 1  < 0 ? project1Size - 1 : projectPhoto - 1;
+			projectPhoto = projectPhoto - 1  < 0 ? project0Size - 1 : projectPhoto - 1;
 			break;
 		case 1: 
-			projectPhoto =  projectPhoto - 1  < 0 ? project2Size - 1: projectPhoto - 1;
+			projectPhoto =  projectPhoto - 1  < 0 ? project1Size - 1: projectPhoto - 1;
 			break;
 		case 2: 
-			projectPhoto =  projectPhoto - 1  < 0 ? project3Size - 1: projectPhoto - 1;
+			projectPhoto =  projectPhoto - 1  < 0 ? project2Size - 1: projectPhoto - 1;
 			break;
 		case 3: 
-			projectPhoto =  projectPhoto - 1  < 0 ? project4Size - 1: projectPhoto - 1;
+			projectPhoto =  projectPhoto - 1  < 0 ? project3Size - 1: projectPhoto - 1;
 			break;
 	}
 	 $("html").css(
 	  	{	
-	  		"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".png')",
+	  		"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".jpg')",
 	  	});
 });
 
@@ -52,28 +53,28 @@ $(".arrow-right").on("click",function(){
 
 	switch(projectId){
 		case 0: 
-			projectPhoto = (projectPhoto + 1) % project1Size;
+			projectPhoto = (projectPhoto + 1) % project0Size;
 			break;
 		case 1: 
-			projectPhoto = (projectPhoto + 1) % project2Size;
+			projectPhoto = (projectPhoto + 1) % proje1t2Size;
 			break;
 		case 2: 
-			projectPhoto = (projectPhoto + 1) % project3Size;
+			projectPhoto = (projectPhoto + 1) % project2Size;
 			break;
 		case 3: 
-			projectPhoto = (projectPhoto + 1) % project4Size;
+			projectPhoto = (projectPhoto + 1) % project3Size;
 			break;
 	}
 	 $("html").css(
 	  	{	
-	  		"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".png')",
+	  		"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".jpg')",
 	  	});
 });
 
 function mostraProjetos(){
 	$("html").css(
 		{	
-			"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".png')",
+			"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".jpg')",
 			"box-shadow" : "inset 6px 31px 61px 49px rgba(0,0,0,0.57)"
 		});
 
@@ -97,7 +98,7 @@ function mostraProjetos(){
 function escondeProjetos(){
 	$("html").css(
 		{	
-			"background-image" :"url('/static/images/background-picture.png')",
+			"background-image" :"url('/static/images/background-picture.jpg')",
 			"box-shadow" : "none"
 		});
 
