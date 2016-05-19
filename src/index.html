@@ -86,10 +86,10 @@
 	<script type="text/javascript" src="static/js/menu-mobile.js"></script>
 	<script type="text/javascript" src="static/js/jquery.js"></script>
 	<script type="text/javascript" src="static/js/detectmobilebrowser.js"></script>
-	<script type="text/javascript" src="static/js/hammer.min.js"></script>
 	<script>
 		if(jQuery.browser.mobile){
 			console.log("É mobile");
+			$.getScript('static/js/hammer.min.js');
 			$.getScript('static/js/portfolio-mobile-project.js');
 		}else{
 			console.log("Não é ");
