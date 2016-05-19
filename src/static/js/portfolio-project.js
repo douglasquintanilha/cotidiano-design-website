@@ -125,6 +125,7 @@ function escondePortfolio(){
   	$(".top-pattern").css("display","none");
   	$(".footer-pattern").css("display","none");
   	$(".menu").css("display","none");
+  	$(".contact").css("display","none");
 }
 
 function mostraPortfolio(){
@@ -136,4 +137,6 @@ function mostraPortfolio(){
   	$(".top-pattern").css("display","block");
   	$(".footer-pattern").css("display","block");
   	$(".menu").css("display","block");
+	$(".contact").css("display","block");
+
 }

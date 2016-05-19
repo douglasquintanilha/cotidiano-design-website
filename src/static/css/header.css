@@ -1,25 +1,4 @@
-.menu{
-	list-style: none;
-	width: 30em;
-	margin: 0 auto;
-	text-align: center;
-	display: block;
-}
 
-.menu > ul{
-	padding: 0px;
-}
-
-.menu-item{
-	display: inline-block;
-	color: white;
-	text-transform: uppercase;
-	font-weight: bold;
-	list-style: none;
-	font-family: 'futura-bk', sans-serif;
-	margin: 0 20px;
-
-}
 
 .mobile-menu{
 	background: #FBFBFB;
@@ -50,16 +29,19 @@
 		top: 0;
 		width: 100%;
 		background-color: #F8F5F5;
+		transition: background 1s ease-out;
 	}
 	.logo{
 		width: 16em;
 		float: right;
+		padding: 15px 15px 0px 0px;
 	}
 
 	.menu-button{
 		margin: 20px 0px 0px 20px;	
 		display: inline-block;
 		height: 0.6em;
+		font-size: 3.4em;
 	}
 
 	.menu-active .mobile-menu{
@@ -147,6 +129,7 @@
 @media (min-width: 360px){
 	.logo{
 		width: 18em;
+		padding: 15px 15px 0px 0px;
 	}
 
 	.social-icon{
@@ -172,11 +155,40 @@
 		font-size: 3.8em;
 	}
 
-
-
 }
 
-@media not all and (max-width: 480px){
+
+@media (min-width: 768px){
+	.logo{
+		width: 18em;
+		padding: 15px 15px 0px 0px;
+	}
+
+	.social-icon{
+		width: 3.5em;
+		margin-left: 0.39em;
+		margin-bottom: 10px;
+	}
+	.social-networks{
+		width: 15em;
+		margin: 0 auto;
+	}
+
+	.mobile-menu-email{
+		font-size: 1.1em;
+
+	}
+
+	.mobile-menu-item{
+		font-size: 1.8em;
+	}
+
+	.menu-button{
+		font-size: 3.8em;
+	}
+
+}
+@media not all and (max-width: 1025px){
 	.menu-open, 
 	.menu-close {
 		display: none;
@@ -186,8 +198,60 @@
 /* Desktop */
 
 @media (min-width: 1024px){
-		
 
+	.header{
+		background: transparent;
+		width: 99.80%; /* Wesley*/
+		position: relative;
+		height: 100%;
+		}
+	
+	.top-pattern{
+	    background-image: url("../images/top-wave-pattern.png");
+	    background-repeat: repeat-x;
+		width: 100%;
+		height: 3.4em;
+	}
+
+	.logo{
+		width: 18em;
+		margin-top: 0.1em;
+		margin-right: 1em;
+		position: absolute;
+		right: 0px;
+		top: 2.8em;
+		float: none;
+	}
+
+	.menu{
+		display: block;
+		width: 25em;
+		list-style: none;
+		width: 30em;
+		margin: 0 auto;
+		text-align: center;
+		display: block;
+	}
+
+	.menu > ul{
+		padding: 0px;
+	}
+
+	.menu-item{
+		display: inline-block;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+		list-style: none;
+		font-family: 'futura-bk', sans-serif;
+		margin: 0 5px;
+
+	}
+
+
+}
+
+@media (min-width: 1368px){
 
 	.header{
 		background: transparent;
@@ -213,8 +277,8 @@
 		float: none;
 	}
 
-	.menu{
-		display: block;
+	.menu-item{
+		margin: 0 20px;
 	}
 
 

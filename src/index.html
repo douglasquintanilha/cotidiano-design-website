@@ -62,6 +62,7 @@
 			</div>	
 		</div>
 
+		<img src="static/images/projects/2/0.jpg" alt="Cafeteria" class="portfolio-project-show" >
 		<img src="static/images/arrow-back.png" alt="Voltar para o portfólio" class="arrow-back">
 		<img src="static/images/arrow-right.png" alt="Trocar imagem do portfólio" class="arrow-right">
 		<img src="static/images/arrow-left.png" alt="Trocar imagem do portfólio" class="arrow-left">
@@ -84,6 +85,18 @@
 	
 	<script type="text/javascript" src="static/js/menu-mobile.js"></script>
 	<script type="text/javascript" src="static/js/jquery.js"></script>
-	<script type="text/javascript" src="static/js/portfolio-project.js"></script>
+	<script type="text/javascript" src="static/js/detectmobilebrowser.js"></script>
+	<script type="text/javascript" src="static/js/hammer.min.js"></script>
+	<script>
+		if(jQuery.browser.mobile){
+			console.log("É mobile");
+			$.getScript('static/js/portfolio-mobile-project.js');
+		}else{
+			console.log("Não é ");
+			$.getScript('static/js/portfolio-project.js');
+		}
+	</script>
+
+
 </body>
 </html>
