@@ -2,7 +2,7 @@
 	.footer-pattern{
 	    background-image: url("../images/footer-hay-pattern.png");
 	    background-repeat: repeat-x;
-	    height: 73px;
+	    height: 65px;
 	}
 
 
@@ -29,6 +29,9 @@
 
 	.contact{
 		font-size: 0.9em;
+		padding-left: 32px;
+
+		margin-bottom: 36px;
 	}
 
 	.footer{

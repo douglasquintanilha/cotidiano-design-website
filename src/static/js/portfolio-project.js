@@ -2,9 +2,9 @@ var projectId = 0;
 var projectPhoto = 0;
 
 var project0Size = 9;
-var project1Size = 1;
+var project1Size = 6;
 var project2Size = 3;
-var project3Size = 1;
+var project3Size = 4;
 
 $(".portfolio-project").on("click",function(){
 	projectId = $(this).data("id");
@@ -43,6 +43,7 @@ $(".arrow-left").on("click",function(){
 			projectPhoto =  projectPhoto - 1  < 0 ? project3Size - 1: projectPhoto - 1;
 			break;
 	}
+
 	 $("html").css(
 	  	{	
 	  		"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".jpg')",
@@ -56,7 +57,7 @@ $(".arrow-right").on("click",function(){
 			projectPhoto = (projectPhoto + 1) % project0Size;
 			break;
 		case 1: 
-			projectPhoto = (projectPhoto + 1) % proje1t2Size;
+			projectPhoto = (projectPhoto + 1) % project1Size;
 			break;
 		case 2: 
 			projectPhoto = (projectPhoto + 1) % project2Size;
@@ -75,7 +76,7 @@ function mostraProjetos(){
 	$("html").css(
 		{	
 			"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".jpg')",
-			"box-shadow" : "inset 6px 31px 61px 49px rgba(0,0,0,0.57)"
+			"box-shadow" :  "inset 0px 32px 170px 70px rgba(0,0,0,0.55)"
 		});
 
 	$(".arrow-back").css({

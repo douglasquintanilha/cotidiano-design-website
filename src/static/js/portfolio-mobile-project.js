@@ -2,12 +2,26 @@ var projectId = 0;
 var projectPhotoId = 0;
 
 var project0Size = 9;
-var project1Size = 1;
+var project1Size = 6;
 var project2Size = 3;
-var project3Size = 1;
+var project3Size = 4;
 
-var projectPhoto = $(".portfolio-project-show")[0];
-var mc = new Hammer(projectPhoto);
+
+$(document).ready(function () {
+//initialize swiper when document ready  
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    
+    // If we need pagination
+    pagination: '.swiper-pagination',
+    
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  })        
+});
 
 $(".portfolio-project").on("click",function(){
 	projectId = $(this).data("id");
@@ -22,45 +36,6 @@ $(".portfolio-project").on("click",function(){
 	
 });
 
-mc.on("swipeleft", function(ev) {
-	console.log("mexeuesquerda");
-	switch(projectId){
-		case 0: 
-			projectPhotoId = projectPhotoId - 1  < 0 ? project0Size - 1 : projectPhotoId - 1;
-			break;
-		case 1: 
-			projectPhotoId =  projectPhotoId - 1  < 0 ? project1Size - 1: projectPhotoId - 1;
-			break;
-		case 2: 
-			projectPhotoId =  projectPhotoId - 1  < 0 ? project2Size - 1: projectPhotoId - 1;
-			break;
-		case 3: 
-			projectPhotoId =  projectPhotoId - 1  < 0 ? project3Size - 1: projectPhotoId - 1;
-			break;
-	}
-	$(".portfolio-project-show").attr("src",'/static/images/projects/'+projectId+'/'+projectPhotoId+'.jpg');
-});
-
-mc.on("swiperight", function(ev) {
-	
-	console.log("mexeu direita");
-	switch(projectId){
-		case 0: 
-			projectPhotoId = (projectPhotoId + 1) % project0Size;
-			break;
-		case 1: 
-			projectPhotoId = (projectPhotoId + 1) % proje1t2Size;
-			break;
-		case 2: 
-			projectPhotoId = (projectPhotoId + 1) % project2Size;
-			break;
-		case 3: 
-			projectPhotoId = (projectPhotoId + 1) % project3Size;
-			break;
-	}
- 	$(".portfolio-project-show").attr("src",'/static/images/projects/'+projectId+'/'+projectPhotoId+'.jpg');
-
-});
 
 function mostraProjetos(){
 	setTimeout(function(){
@@ -74,11 +49,16 @@ function mostraProjetos(){
 				"box-shadow" : "inset 0px 0px 20px 500px rgba(0, 0, 0, 0.60)"
 			});
 
+		/*
 		$(".portfolio-project-show").attr("src",'/static/images/projects/'+projectId+'/0.jpg').css(
 			{
 				"display" : "block"
 			});
-
+		*/
+		$(".swiper-container").css(
+			{
+				"left" : "0px"
+			});
 	},1000);
 
 }

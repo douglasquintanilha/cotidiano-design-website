@@ -8,6 +8,7 @@
 	<title>Cotidiano Design</title>
 
 	<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="static/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="static/css/main.css">
 	<link rel="stylesheet" type="text/css" href="static/css/header.css">
 	<link rel="stylesheet" type="text/css" href="static/css/portfolio.css">
@@ -17,14 +18,6 @@
 	<header class="header">
 		<div class="top-pattern"></div>
 		<img src="static/images/3-dot-menu.png"class="menu-button menu-open" alt="Botão do menu">
-		<nav class="menu">
-			<ul>
-				<li class="menu-item">Início</li>
-				<li class="menu-item">Portfólio</li>
-				<li class="menu-item">Contato</li>
-				<li class="menu-item">Sobre Nós</li>
-			</ul>
-		</nav>
 		<img src="static/images/logo.png" alt="Logotipo da Cotidiano Design" class="logo">
 		<div class="clearfix"></div>
 	</header>
@@ -33,9 +26,7 @@
 		<div class="menu-side-pattern"></div>
 		<div class="mobile-menu-navigation">
 			<ul>
-				<li><a href="#" class="mobile-menu-item">Início</a></li>
-				<li><a href="#" class="mobile-menu-item">Portfólio</a></li>
-				<li><a href="#" class="mobile-menu-item">Contato</a></li>			
+				<li><a href="#" class="mobile-menu-item">Início</a></li>			
 			</ul>
 		</div>
 		<address class="mobile-menu-contact">
@@ -60,6 +51,24 @@
 				<img src="static/images/projects/2/0.jpg" alt="Cafeteria" class="portfolio-project-2 portfolio-project" data-id="2">
 				<img src="static/images/projects/3/0.jpg" alt="Quarto" class="portfolio-project-3 portfolio-project" data-id="3">
 			</div>	
+		</div>
+		
+		<!-- Slider main container -->
+		<div class="swiper-container">
+		    <!-- Additional required wrapper -->
+		    <div class="swiper-wrapper">
+		        <!-- Slides -->
+		        <div class="swiper-slide"><img src="static/images/project-image-3.png" alt=""></div>
+		        <div class="swiper-slide"><img src="static/images/project-image-3.png" alt=""></div>
+		        <div class="swiper-slide"><img src="static/images/project-image-3.png" alt=""></div>		      
+		        <div class="swiper-slide"><img src="static/images/project-image-3.png" alt=""></div>		      
+		    </div>
+		    <!-- If we need pagination -->
+		    <div class="swiper-pagination"></div>
+		    
+		    <!-- If we need navigation buttons -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
 		</div>
 
 		<img src="static/images/projects/2/0.jpg" alt="Cafeteria" class="portfolio-project-show" >
@@ -86,13 +95,13 @@
 	<script type="text/javascript" src="static/js/menu-mobile.js"></script>
 	<script type="text/javascript" src="static/js/jquery.js"></script>
 	<script type="text/javascript" src="static/js/detectmobilebrowser.js"></script>
+	<script type="text/javascript" src="static/js/swiper.jquery.min.js"></script>
+	
 	<script>
 		if(jQuery.browser.mobile){
-			console.log("É mobile");
 			$.getScript('static/js/hammer.min.js');
 			$.getScript('static/js/portfolio-mobile-project.js');
-		}else{
-			console.log("Não é ");
+		}else{		
 			$.getScript('static/js/portfolio-project.js');
 		}
 	</script>

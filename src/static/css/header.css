@@ -34,7 +34,7 @@
 	.logo{
 		width: 16em;
 		float: right;
-		padding: 15px 15px 0px 0px;
+		padding: 0px 15px 0px 0px;
 	}
 
 	.menu-button{
@@ -129,7 +129,6 @@
 @media (min-width: 360px){
 	.logo{
 		width: 18em;
-		padding: 15px 15px 0px 0px;
 	}
 
 	.social-icon{
@@ -161,7 +160,6 @@
 @media (min-width: 768px){
 	.logo{
 		width: 18em;
-		padding: 15px 15px 0px 0px;
 	}
 
 	.social-icon{
@@ -273,7 +271,7 @@
 		margin-right: 1em;
 		position: absolute;
 		right: 0px;
-		top: 4.0em;
+		top: 5em;
 		float: none;
 	}
 
