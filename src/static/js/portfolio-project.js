@@ -1,23 +1,49 @@
-var projectId = 0;
-var projectPhoto = 0;
+var projectId;
+var logoTop = $(".logo").css("top");
+var logoWidth = parseInt($(".logo").css("width"),10);
 
-var project0Size = 9;
-var project1Size = 6;
-var project2Size = 3;
-var project3Size = 4;
+// Inicializing multiple instaces of swiper
+$(document).ready(function () {
+	$(".swiper-container").each(function(index,element){
+		var $this = $(this);
+
+		var swiper = new Swiper(".swiper-"+index, {
+			// Optional parameters
+		    direction: 'horizontal',
+		    loop: true,
+
+		    // Controls
+		    keyboardControl: true,
+		   
+		    // If we need pagination
+		    pagination: '.swiper-pagination',
+		    speed: 700,
+
+		    // Preloading images
+		    preloadImages: false,
+		    lazyLoading: true,
+		    lazyLoadingInPrevNext: true,
+		    
+		    // Navigation arrows
+		    nextButton: $this.find(".arrow-right")[0],
+		    prevButton: $this.find(".arrow-left")[0]
+
+		});
+	})
+});	
+      
+
+
 
 $(".portfolio-project").on("click",function(){
 	projectId = $(this).data("id");
-
-	$(".portfolio-images").addClass("portfolio-fade");
-	$(".portfolio-title").addClass("portfolio-fade");
 	
 	//Coisas que somem
 	setTimeout(escondePortfolio(),1000);
 	
 	//Coisas que aparecem
-	setTimeout(mostraProjetos(), 400);
-	
+	setTimeout(mostraProjetos(projectId), 400);
+
 });
 
 
@@ -27,117 +53,153 @@ $(".arrow-back").on("click",function(){
 	mostraPortfolio()
 });
 
-
-$(".arrow-left").on("click",function(){
-	switch(projectId){
-		case 0: 
-			projectPhoto = projectPhoto - 1  < 0 ? project0Size - 1 : projectPhoto - 1;
-			break;
-		case 1: 
-			projectPhoto =  projectPhoto - 1  < 0 ? project1Size - 1: projectPhoto - 1;
-			break;
-		case 2: 
-			projectPhoto =  projectPhoto - 1  < 0 ? project2Size - 1: projectPhoto - 1;
-			break;
-		case 3: 
-			projectPhoto =  projectPhoto - 1  < 0 ? project3Size - 1: projectPhoto - 1;
-			break;
-	}
-
-	 $("html").css(
-	  	{	
-	  		"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".jpg')",
-	  	});
-});
-
-$(".arrow-right").on("click",function(){
-
-	switch(projectId){
-		case 0: 
-			projectPhoto = (projectPhoto + 1) % project0Size;
-			break;
-		case 1: 
-			projectPhoto = (projectPhoto + 1) % project1Size;
-			break;
-		case 2: 
-			projectPhoto = (projectPhoto + 1) % project2Size;
-			break;
-		case 3: 
-			projectPhoto = (projectPhoto + 1) % project3Size;
-			break;
-	}
-	 $("html").css(
-	  	{	
-	  		"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".jpg')",
-	  	});
-});
-
-function mostraProjetos(){
-	$("html").css(
-		{	
-			"background-image" :"url('/static/images/projects/"+ projectId +"/"+ projectPhoto +".jpg')",
-			"box-shadow" :  "inset 0px 32px 170px 70px rgba(0,0,0,0.55)"
-		});
+function mostraProjetos(swiperId){
 
 	$(".arrow-back").css({
 			"display" :"block",
+		}).animate({
 			"opacity" : "1"
-		});
+		},1000);
 
 	$(".arrow-left").css({
 			"display" :"block",
+		}).animate({
 			"opacity" : "1"
-		});
+		},1000);
 
 	$(".arrow-right").css({
 			"display" :"block",
+		}).animate({
 			"opacity" : "1"
+		},1000);
+	
+	$(".swiper-"+swiperId).css(
+		{
+			"left" : "0px"
 		});
+
+	$(".logo").animate({
+		"top": "50px",
+		"width": logoWidth * 0.8
+
+	},"ease-out");
+
+	$(".box-shadow").animate({
+		"opacity": '1'
+	});
 
 }
 
 function escondeProjetos(){
-	$("html").css(
+
+	var opacityZeroCss = {
+			"opacity" : "0"
+		};
+	var displayNoneCss ={
+			"display" :"none",
+		}; 	
+
+	$(".swiper-container").css(
 		{	
-			"background-image" :"url('/static/images/background-picture.jpg')",
-			"box-shadow" : "none"
+			"left" : "100%"
 		});
 
-	$(".arrow-back").css({
-			"display" :"none",
-			"opacity" : "0"
-		});
+	$(".arrow-back").animate(opacityZeroCss,300,function(){
+		//$(this).css(displayNoneCss);
+	});
 
-	$(".arrow-left").css({
-			"display" :"none",
-			"opacity" : "0"
-		});
+	$(".arrow-left").animate(opacityZeroCss,1000,function(){
+		//$(this).css(displayNoneCss);
+	});
 
-	$(".arrow-right").css({
-			"display" :"none",
-			"opacity" : "0"
-		});
+	$(".arrow-right").animate(opacityZeroCss,1000,function(){
+		//$(this).css(displayNoneCss);
+	});
+
+	$(".logo").animate({
+		"top": logoTop,
+		"width": logoWidth
+	});
+
+	$(".box-shadow").animate({
+		"opacity": '0'
+	});
 }
 
 
 function escondePortfolio(){
-	$(".portfolio-images").css("display","none");
-	$(".portfolio-title").css("display","none");
-  	$(".top-pattern").css("display","none");
-  	$(".footer-pattern").css("display","none");
-  	$(".menu").css("display","none");
-  	$(".contact").css("display","none");
+	var displayNoneCss ={
+			"display" :"none",
+		}; 
+
+	$(".portfolio-images").animate({
+		"opacity": 0,
+	},function(){
+		$(this).css(displayNoneCss);
+	});
+
+	$(".portfolio-title").animate({
+		"opacity": 0,
+		"left": "-20px"
+	},function(){
+		$(this).css(displayNoneCss);
+	});
+
+  	$(".top-pattern").animate({
+		"opacity": 0,
+		"top": "-20px"
+	},function(){
+		$(this).css(displayNoneCss);
+	});
+
+  	$(".footer-pattern").animate({
+		"opacity": 0,
+		"bottom": "-20px"
+
+	},function(){
+		$(this).css(displayNoneCss);
+	});
+
+  	$(".contact").animate({
+		"opacity": 0,
+		"left": "-20px"
+	},function(){
+		$(this).css(displayNoneCss);
+	});
 }
 
 function mostraPortfolio(){
-	$(".portfolio-images").removeClass("portfolio-fade");
-	$(".portfolio-title").removeClass("portfolio-fade");
+	$(".portfolio-images").css({
+		"display": "block"
+	}).animate({
+		"opacity": 1
+	});
 
-	$(".portfolio-images").css("display","block");
-	$(".portfolio-title").css("display","block");
-  	$(".top-pattern").css("display","block");
-  	$(".footer-pattern").css("display","block");
-  	$(".menu").css("display","block");
-	$(".contact").css("display","block");
+	$(".portfolio-title").css({
+		"display": "block"
+	}).animate({
+		"opacity": 1,
+		"left": "0"
+	});
 
+  	$(".top-pattern").css({
+		"display": "block"
+	}).animate({
+		"opacity": 1,
+		"top": "0"
+	});
+
+  	$(".footer-pattern").css({
+		"display": "block"
+	}).animate({
+		"opacity": 1,
+		"bottom": "0"
+	});
+
+	$(".contact").css({
+		"display": "block"
+	}).animate({
+		"opacity": 1,
+		"left": "0px"
+	});
 }

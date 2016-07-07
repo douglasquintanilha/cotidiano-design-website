@@ -49,12 +49,6 @@ function mostraProjetos(){
 				"box-shadow" : "inset 0px 0px 20px 500px rgba(0, 0, 0, 0.60)"
 			});
 
-		/*
-		$(".portfolio-project-show").attr("src",'/static/images/projects/'+projectId+'/0.jpg').css(
-			{
-				"display" : "block"
-			});
-		*/
 		$(".swiper-container").css(
 			{
 				"left" : "0px"

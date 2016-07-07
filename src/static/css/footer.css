@@ -2,6 +2,7 @@
 	.footer-pattern{
 	    background-image: url("../images/footer-hay-pattern.png");
 	    background-repeat: repeat-x;
+	    position: relative;
 	    height: 65px;
 	}
 
@@ -9,6 +10,7 @@
 	.contact{
 		font-style: normal;
 		font-family: 'futura-bk', sans-serif;
+		position: relative;
 		letter-spacing: 2px;
 		margin: 60px 0px 30px 15px;
 		font-size: 1.2em;

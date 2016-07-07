@@ -208,6 +208,7 @@
 	    background-image: url("../images/top-wave-pattern.png");
 	    background-repeat: repeat-x;
 		width: 100%;
+		position: relative;
 		height: 3.4em;
 	}
 
